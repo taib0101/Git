@@ -1,0 +1,4 @@
+# git delete the modified files from repository but don't delete the commit history
+# git revert is specially done for modified files not for add and delete files
+
+$ git revert <commit-id>

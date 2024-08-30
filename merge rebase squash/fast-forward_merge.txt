@@ -1,0 +1,2 @@
+# two or more unchanged updated commits or branch after merging called fast
+# forward merging 

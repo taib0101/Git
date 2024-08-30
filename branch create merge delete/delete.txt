@@ -1,0 +1,5 @@
+$ git branch -d child
+# deleting branch from local repository
+
+$ git push origin --delete child
+# deleting branch from remote repository

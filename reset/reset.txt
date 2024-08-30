@@ -1,0 +1,25 @@
+# reset changes commit history 
+
+$ git reset --soft HEAD~[1-N]
+# --soft option undo the commit with keeping file in staged area 
+# --soft option undo the previous commit with keeping files
+
+$ git reset --mixed HEAD~[1-N]
+# --mixed option undo the commit and staged area but keep modified files in
+# working directory
+
+$ git reset --hard HEAD~[1-N]
+# --hard option undo the commit , stage and working directory
+# warning: don't use --hard option ,it will delete the real file after it commited
+# --hard option also undo the commited deleted files
+# it helps when git deleted and undo commited which already pushed
+
+$ git reset <commit-id>
+# it undo the previous commits with keeping modified files 
+
+
+# suppose you modified files at commit 4 ,now you reset with commit id at commit 1
+# commit 4 files will show commit 1 unstage area, those file will be unchanged 
+
+
+# see command also git add . , git merge , git reflog , git status

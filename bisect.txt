@@ -1,0 +1,5 @@
+# it works like binary search
+$ git bisect start
+$ git bisect bad
+$ git bisect good
+$ git bisect reset

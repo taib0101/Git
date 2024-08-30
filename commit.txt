@@ -1,0 +1,6 @@
+#after adding the files now commit
+# git commit -m <message>
+$ git commit -m "added"
+
+#rewrite last commit 
+$git commit --amend -m "modified"

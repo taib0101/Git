@@ -1,0 +1,36 @@
+
+
+
+
+
+
+                working                             stage                          local                                 remote
+               directory                            area                         repository                            repository
+              -----------                          -------                     --------------                         -------------
+		   |				
+		   |
+		   |       git add . 
+				or
+			   git add file.txt
+		   |------------------------------>  |
+						     |
+						     |
+						     | git commit -m <message>
+						     |----------------------------> |
+										    |
+										    |  git remote add origin <url>
+										    |      git push -f origin
+										    |  git remote remove origin
+										    |---------------------------------->  github | gitlab
+																|
+																|
+																|
+																|
+																|
+			git merge								git fetch			|
+		   |<--------------------------------|<-----------------------------|<------------------------------------------|
+		   |								    |                                           |
+		   |								    |                                           |
+		   |                                      git pull # where pull = fetch + merge                                 |
+                   |<-----------------------------------------------------------------------------------------------------------|                 
+                                                                         

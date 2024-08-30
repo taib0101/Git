@@ -1,0 +1,10 @@
+# child branch is important for 
+# separate paths, isolation, flexibility, collaboration, experimnenrarion,
+# visualization, naming purpose
+
+$ git checkout <commit-id>
+$ git branch child
+$ git checkout child
+$ git commit -m "created branch"
+$ git branch
+$ git push origin child

@@ -1,0 +1,27 @@
+$ git log
+$ git log [branch_name] 
+
+$ git log --oneline
+# it show 7 word's commit hash,tag name, commit message,head and branch
+# in oneline
+
+$ git log --stat
+# it show the details about create , insertion and deletion of line,
+# delete history
+
+$ git log --patch|-p
+# it show more details about insertion
+
+$ git log --graph
+# it show the graph
+
+$ git log --after="yy-mm-dd"
+$ git log --after="21 days ago | 1 week ago | 24 hour ago"
+$ git log --after="2023-10-2" --before="2023-10-6" 
+# it show history based on time
+
+$ git log --author="Taib"
+# filter commits by particular user
+
+$ git log --grep="Version 3"
+# filter by commit message

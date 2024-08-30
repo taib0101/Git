@@ -1,0 +1,14 @@
+# git stash command undo the changes without commit 
+$ git stash
+
+# git stash pop command redo the changes without commit 
+$ git stash pop
+
+# to see stash list
+$ git stash list
+
+# to save stash
+$ git stash save "name"
+
+# to delete the stash
+$ git stash drop stash@{1-N}

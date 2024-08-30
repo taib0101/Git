@@ -1,0 +1,6 @@
+$ git config --list
+# to git config information
+
+$ git config --global user.name taib
+$ git config --global user.email mail@bro.com
+# set the username and useremail

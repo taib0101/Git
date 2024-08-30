@@ -1,0 +1,5 @@
+# squash is not a git command it is a part of rebase
+# it combines multiple commit into one
+# means i can combine commits into single commits
+$ git rebase -i [commit-id | HEAD~[1-N]]
+# it will take you to vim editor and convert pick to squash

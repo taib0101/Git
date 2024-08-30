@@ -1,0 +1,12 @@
+#adding for single file 
+$ git add file 
+# or
+$ git add --patch file
+
+ 
+#adding for all file
+$ git add .
+# or
+$ git add --patch .
+
+$ git status

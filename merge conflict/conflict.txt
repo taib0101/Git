@@ -1,0 +1,18 @@
+$ git diff
+# or
+$ git log -p conflict_file.txt
+# to see the conflicted lines in a conflicted file
+
+$ git checkout --ours conflict_file.txt
+# to resolve this file conflict from current branch
+
+$ git checkout --theirs conflict_file.txt
+# to resolve this file conflict from another or incoming branch
+
+$ git merge child
+# it keep both conflicted lines
+
+$ git merge --abort
+# suppose you don't want merge the conflicted file after merging use "--abort"
+
+

@@ -1,0 +1,42 @@
+$ git diff <commit-id>
+$ git diff <commit-id>  <commit-id>
+$ git diff --staged
+$ git diff --staged  <commit-id>
+$ git diff <branch-01> <branch-02>
+# it shows different between two branch
+
+    remote
+   repository
+---------------
+                |                                                          and so on
+                |                                                               ^
+                |                                       commit 03               |
+                |                               |-------------------------|     |
+                |                               |       stage area--------|------
+                |                               |    working directory    |         <-------------- head /master
+           push |<------------------------------------ local repositor<---|-----|
+                                                |-------------------------|     |
+                                                                                |
+                                                        commit 02:modified      |
+                                                |-------------------------|     |
+                                                |       stage area--------|------
+                                                |    working directory    |        
+           push |<------------------------------------ local repositor<---|-----|
+                                                |-------------------------|     |
+                                                                                |
+                                                        commit 01               |
+                                                |-------------------------|     |
+                                                |       stage area--------|------
+                                                |    working directory    |         # git diff here for see the difference 
+           push |<------------------------------------ local repositor<---|-----|
+                                                |-------------------------|     |
+                                                                                |
+                                                                                |
+                                                        git init                |
+                                                |-------------------------|     |
+                                                |       stage area--------|------
+                                                |    working directory    |
+                                                |-------------------------|
+
+# diff history will flow like this
+# commit01-commit-02-commit03 up to down

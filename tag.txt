@@ -1,0 +1,19 @@
+$ git tag <v1.0.0>
+# this is lightweight tag version:v1.0.0
+
+$ git tag -a <v2.0.0> -m "release version"
+# this is annotated tags -a for annotated -m for message
+
+$ git push origin --tags
+# push origin at remote repository with tag name as version
+
+$ git tag -d <v1.0.0>
+# delete the tag
+
+$ git tag origin --delete <v2.0.0>
+# delete version tag from remote repository
+
+$ git show <v1.0.0> 
+
+$ git tag <tagname> <commit-id>
+# giving tag name to commit id

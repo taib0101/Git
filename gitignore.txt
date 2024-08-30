@@ -1,0 +1,10 @@
+$ nano .gitignore
+
+~/.gitignore$ *.txt , bro.html
+
+$ git rm --cached specific_file.txt
+# after pushed to remote repository you forget to keep ignore, then use this 
+# command and add to .gitignore file
+
+~/.gitignore$ *.txt , bro.html, specific_file.txt
+# git push

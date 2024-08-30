@@ -1,0 +1,8 @@
+$ git show HEAD
+# it means it show top latest commit
+$ git show HEAD~1
+# it means it show second latest commit
+$ git show HEAD~2
+# it means it show third latest commit
+$ git show HEAD~3
+# it means it show fourth latest commit

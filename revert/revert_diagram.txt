@@ -1,0 +1,38 @@
+# git revert is special for modified files not for add and deleted files
+# suppose commit02: modified file ,so revert at commit01-id
+# see also git reset , git merge , git status , git restore , git reflog, git revert --abort (for redo)
+
+
+    remote
+   repository
+---------------
+                |                                                          and so on
+                |                                                               ^       
+                |                                       commit 03               |
+                |                               |-------------------------|     |
+                |                               |       stage area--------|------
+                |                               |    working directory    |         <-------------- head /master
+           push |<------------------------------------ local repositor<---|-----|
+                                                |-------------------------|     |
+                                                                                |
+                                                        commit 02:modified      |
+                                                |-------------------------|     |
+                                                |       stage area--------|------
+                                                |    working directory    |         #git revert here 
+           push |<------------------------------------ local repositor<---|-----|
+                                                |-------------------------|     |
+                                                                                |
+                                                        commit 01               |
+                                                |-------------------------|     |
+                                                |       stage area--------|------
+                                                |    working directory    |
+           push |<------------------------------------ local repositor<---|-----|
+                                                |-------------------------|     |
+                                                                                |
+                                                                                |
+                                                        git init                |
+                                                |-------------------------|     |
+                                                |       stage area--------|------
+                                                |    working directory    |
+                                                |-------------------------|
+

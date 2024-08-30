@@ -1,0 +1,11 @@
+# git rm command refers to remove file or directory from working directory,
+# we can undo it using restore --staged and restore
+$ git rm .
+# or
+$ git rm specific_file
+
+# git rm --cached refers change stage or track area to untrack area, we can undo
+# it using restore
+$ git rm --cached .
+# or
+$git rm --cached specific_file

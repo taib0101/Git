@@ -1,0 +1,24 @@
+# converting tracked file to untracked file
+# converting stage to unstage file
+$ git restore --staged specific_file.txt
+# or
+$ git restore --staged .
+
+# note 1:
+# if modified file has deleted somehow and it is in stage area
+# then using restore , the deleted file with inserted lines will not vanish
+
+# note 2:
+# if modified file has deleted somehow and it is in unstage area
+# then using restore , the deleted file with inserted lines will vanish 
+
+# note 3:
+# if modified file stay in stage and didn't delete, but took to the
+# unstage area using restore --staged, again use restore modified 
+# files insertion line will vanish
+
+$ git restore  .
+# or
+$ git restore specific_file.txt
+# or
+$ git restore [--patch|-p] <.|specific_file.txt>

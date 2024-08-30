@@ -1,0 +1,37 @@
+# 1.cleaner history
+# 2.more readable graph
+# 3.tougher to resolve conflict
+
+$ git branch taib
+$ git checkout taib # current pointer at taib branch 
+$ git rebase master # taib commit will rebase automatically with master
+
+
+        master         taib
+        ------         ----
+
+	+ '3
+	|
+	+ '2
+	|
+	+ '1
+	|
+        *_______________
+        |               X
+        *                + 3
+        |                X
+        *                + 2
+        |                X
+        * _______________+ 1
+        |/
+        *
+
+
+# if you want ,you can reset it 
+$ git log
+$ git reflog
+$ git reset [<commit-id>|<HEAD@{N}>]
+$ git status
+$ git rstore or rm
+$ git merge <commit-id> #fast-forward merge
+

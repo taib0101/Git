@@ -1,0 +1,37 @@
+# reset deletes changes from repository and commit history with keeping files
+# suppose commit02: modified files , but actuall modified has done at commit01, so reset commit01 
+# see command git reflog, git add, git restore , git status , git merge
+
+
+    remote
+   repository
+---------------									
+		|							 
+		|								
+                |                                       commit 03               
+                |                               |-------------------------|     
+                |                               |       stage area	  |      
+                |                               |    working directory    |  # deleted commit history with keeping files on unstage area
+           					| 	 local repositor  |
+                                                |-------------------------|     
+                                                                                
+                                                        commit 02:modified               
+                                                |-------------------------|     
+                                                |       stage area	  |  # deleted commit history with keeping files on unstage area
+                                                |    working directory    |  
+           					|      local repositor    |    and so on
+                                                |-------------------------|     ^
+                                                                                |
+                                                        commit 01               |
+                                                |-------------------------|     |
+                                                |       stage area--------|------                
+                                                |    working directory    |                <--------------- head/master # current pointer
+           push |<------------------------------------ local repositor<---|-----|
+						|-------------------------|     |
+										|
+										|
+							git init                |
+						|-------------------------|     |
+						|       stage area--------|------
+						|    working directory    |
+						|-------------------------|

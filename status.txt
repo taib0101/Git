@@ -1,0 +1,2 @@
+# to see tracked and untracked file
+$ git status

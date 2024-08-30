@@ -1,0 +1,24 @@
+# origin is default name of remote repository
+
+$ git remote -v
+# it show the url of remote repository
+
+$ git push origin master
+# master as branch name , you can push from any branch
+
+$ git pull origin master
+
+$ git remote show origin
+# it show all details of remote repository
+
+$ git remote rename origin new-origin
+# rename the remote repository origin to new-origin
+
+$ git remote add origin <url>
+# adding origin
+
+$ git remote rm origin 
+# removing origin
+
+$ git remote set-url origin <url>
+# changing origin url like https://bro1 to https://bro2 
