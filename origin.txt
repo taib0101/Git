@@ -4,6 +4,8 @@ $ git remote -v
 # it show the url of remote repository
 
 $ git push origin master
+# or
+$ git push -f origin master
 # master as branch name , you can push from any branch
 
 $ git pull origin master
